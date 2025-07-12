@@ -1,0 +1,692 @@
+# ECE270 breakout board pinmap (rev 2)
+
+set_io --warn-no-port HWCLK J3
+
+#set_io --warn-no-port PB[20] A11
+set_io --warn-no-port CLK100 A11
+
+set_io --warn-no-port PB[19] A10
+set_io --warn-no-port PB[18] C9
+set_io --warn-no-port PB[17] A9
+set_io --warn-no-port PB[16] B9
+
+set_io --warn-no-port PB[15] B8
+set_io --warn-no-port PB[14] A7
+set_io --warn-no-port PB[13] B7
+set_io --warn-no-port PB[12] C7
+
+set_io --warn-no-port PB[11] A6
+set_io --warn-no-port PB[10] C6
+set_io --warn-no-port PB[9] B6
+set_io --warn-no-port PB[8] A5
+
+set_io --warn-no-port PB[7] B5
+set_io --warn-no-port PB[6] B4
+set_io --warn-no-port PB[5] A2
+set_io --warn-no-port PB[4] A1
+
+set_io --warn-no-port PB[3] C5
+set_io --warn-no-port PB[2] C4
+set_io --warn-no-port PB[1] B3
+set_io --warn-no-port PB[0] C3
+
+set_io --warn-no-port SS0[0] D2 # A
+set_io --warn-no-port SS0[1] C1 # B
+set_io --warn-no-port SS0[2] C2 # C
+set_io --warn-no-port SS0[3] F2 # D
+set_io --warn-no-port SS0[4] G1 # E
+set_io --warn-no-port SS0[5] E2 # F
+set_io --warn-no-port SS0[6] F1 # G
+set_io --warn-no-port SS0[7] B1 # DP
+
+set_io --warn-no-port SS1[0] J2 # A
+set_io --warn-no-port SS1[1] J1 # B
+set_io --warn-no-port SS1[2] H2 # C
+set_io --warn-no-port SS1[3] M1 # D
+set_io --warn-no-port SS1[4] L3 # E
+set_io --warn-no-port SS1[5] L1 # F
+set_io --warn-no-port SS1[6] K3 # G
+set_io --warn-no-port SS1[7] G2 # DP
+
+set_io --warn-no-port SS2[0] P1 # A
+set_io --warn-no-port SS2[1] P2 # B
+set_io --warn-no-port SS2[2] N3 # C
+set_io --warn-no-port SS2[3] T14 # D
+set_io --warn-no-port SS2[4] T15 # E
+set_io --warn-no-port SS2[5] T16 # F
+set_io --warn-no-port SS2[6] R16 # G
+set_io --warn-no-port SS2[7] N2 # DP
+
+set_io --warn-no-port SS3[0] N10 # A
+set_io --warn-no-port SS3[1] M11 # B
+set_io --warn-no-port SS3[2] N12 # C
+set_io --warn-no-port SS3[3] P9 # D
+set_io --warn-no-port SS3[4] T10 # E
+set_io --warn-no-port SS3[5] R10 # F
+set_io --warn-no-port SS3[6] T11 # G
+set_io --warn-no-port SS3[7] P13 # DP
+
+set_io --warn-no-port SS4[0] T6 # A
+set_io --warn-no-port SS4[1] R6 # B
+set_io --warn-no-port SS4[2] T7 # C
+set_io --warn-no-port SS4[3] T3 # D
+set_io --warn-no-port SS4[4] R3 # E
+set_io --warn-no-port SS4[5] R4 # F
+set_io --warn-no-port SS4[6] T5 # G
+set_io --warn-no-port SS4[7] T8 # DP
+
+set_io --warn-no-port SS5[0] R15 # A
+set_io --warn-no-port SS5[1] T1 # B
+set_io --warn-no-port SS5[2] T2 # C
+set_io --warn-no-port SS5[3] L16 # D
+set_io --warn-no-port SS5[4] N16 # E
+set_io --warn-no-port SS5[5] M15 # F
+set_io --warn-no-port SS5[6] P16 # G
+set_io --warn-no-port SS5[7] B11 # DP
+
+set_io --warn-no-port SS6[0] K14 # A
+set_io --warn-no-port SS6[1] J14 # B
+set_io --warn-no-port SS6[2] K15 # C
+set_io --warn-no-port SS6[3] G15 # D
+set_io --warn-no-port SS6[4] J15 # E
+set_io --warn-no-port SS6[5] H14 # F
+set_io --warn-no-port SS6[6] G14 # G
+set_io --warn-no-port SS6[7] K16 # DP
+
+set_io --warn-no-port SS7[0] F16 # A
+set_io --warn-no-port SS7[1] E14 # B
+set_io --warn-no-port SS7[2] G16 # C
+set_io --warn-no-port SS7[3] B16 # D
+set_io --warn-no-port SS7[4] D16 # E
+set_io --warn-no-port SS7[5] D14 # F
+set_io --warn-no-port SS7[6] E16 # G
+set_io --warn-no-port SS7[7] F15 # DP
+
+set_io --warn-no-port PB19 A10
+set_io --warn-no-port PB18 C9
+set_io --warn-no-port PB17 A9
+set_io --warn-no-port PB16 B9
+
+set_io --warn-no-port PB15 B8
+set_io --warn-no-port PB14 A7
+set_io --warn-no-port PB13 B7
+set_io --warn-no-port PB12 C7
+
+set_io --warn-no-port PB11 A6
+set_io --warn-no-port PB10 C6
+
+set_io --warn-no-port PBZ A10
+set_io --warn-no-port PBY C9
+set_io --warn-no-port PBX A9
+set_io --warn-no-port PBW B9
+
+set_io --warn-no-port PBF B8
+set_io --warn-no-port PBE A7
+set_io --warn-no-port PBD B7
+set_io --warn-no-port PBC C7
+
+set_io --warn-no-port PBB A6
+set_io --warn-no-port PBA C6
+set_io --warn-no-port PB9 B6
+set_io --warn-no-port PB8 A5
+
+set_io --warn-no-port PB7 B5
+set_io --warn-no-port PB6 B4
+set_io --warn-no-port PB5 A2
+set_io --warn-no-port PB4 A1
+
+set_io --warn-no-port PB3 C5
+set_io --warn-no-port PB2 C4
+set_io --warn-no-port PB1 B3
+set_io --warn-no-port PB0 C3
+
+
+set_io --warn-no-port PB_19 A10
+set_io --warn-no-port PB_18 C9
+set_io --warn-no-port PB_17 A9
+set_io --warn-no-port PB_16 B9
+
+set_io --warn-no-port PB_15 B8
+set_io --warn-no-port PB_14 A7
+set_io --warn-no-port PB_13 B7
+set_io --warn-no-port PB_12 C7
+
+set_io --warn-no-port PB_11 A6
+set_io --warn-no-port PB_10 C6
+
+set_io --warn-no-port PB_Z A10
+set_io --warn-no-port PB_Y C9
+set_io --warn-no-port PB_X A9
+set_io --warn-no-port PB_W B9
+
+set_io --warn-no-port PB_F B8
+set_io --warn-no-port PB_E A7
+set_io --warn-no-port PB_D B7
+set_io --warn-no-port PB_C C7
+
+set_io --warn-no-port PB_B A6
+set_io --warn-no-port PB_A C6
+set_io --warn-no-port PB_9 B6
+set_io --warn-no-port PB_8 A5
+
+set_io --warn-no-port PB_7 B5
+set_io --warn-no-port PB_6 B4
+set_io --warn-no-port PB_5 A2
+set_io --warn-no-port PB_4 A1
+
+set_io --warn-no-port PB_3 C5
+set_io --warn-no-port PB_2 C4
+set_io --warn-no-port PB_1 B3
+set_io --warn-no-port PB_0 C3
+
+set_io --warn-no-port RIGHT[7] P10
+set_io --warn-no-port RIGHT[6] T13
+set_io --warn-no-port RIGHT[5] R1
+set_io --warn-no-port RIGHT[4] M2
+set_io --warn-no-port RIGHT[3] K1
+set_io --warn-no-port RIGHT[2] H1
+set_io --warn-no-port RIGHT[1] D1
+set_io --warn-no-port RIGHT[0] B2
+
+set_io --warn-no-port LEFT[7] C16
+set_io --warn-no-port LEFT[6] D15
+set_io --warn-no-port LEFT[5] H16
+set_io --warn-no-port LEFT[4] F14
+set_io --warn-no-port LEFT[3] M16
+set_io --warn-no-port LEFT[2] P15
+set_io --warn-no-port LEFT[1] R2
+set_io --warn-no-port LEFT[0] R5
+
+set_io --warn-no-port RIGHT_7 P10
+set_io --warn-no-port RIGHT_6 T13
+set_io --warn-no-port RIGHT_5 R1
+set_io --warn-no-port RIGHT_4 M2
+set_io --warn-no-port RIGHT_3 K1
+set_io --warn-no-port RIGHT_2 H1
+set_io --warn-no-port RIGHT_1 D1
+set_io --warn-no-port RIGHT_0 B2
+
+set_io --warn-no-port LEFT_7 C16
+set_io --warn-no-port LEFT_6 D15
+set_io --warn-no-port LEFT_5 H16
+set_io --warn-no-port LEFT_4 F14
+set_io --warn-no-port LEFT_3 M16
+set_io --warn-no-port LEFT_2 P15
+set_io --warn-no-port LEFT_1 R2
+set_io --warn-no-port LEFT_0 R5
+
+set_io --warn-no-port RIGHT7 P10
+set_io --warn-no-port RIGHT6 T13
+set_io --warn-no-port RIGHT5 R1
+set_io --warn-no-port RIGHT4 M2
+set_io --warn-no-port RIGHT3 K1
+set_io --warn-no-port RIGHT2 H1
+set_io --warn-no-port RIGHT1 D1
+set_io --warn-no-port RIGHT0 B2
+
+set_io --warn-no-port LEFT7 C16
+set_io --warn-no-port LEFT6 D15
+set_io --warn-no-port LEFT5 H16
+set_io --warn-no-port LEFT4 F14
+set_io --warn-no-port LEFT3 M16
+set_io --warn-no-port LEFT2 P15
+set_io --warn-no-port LEFT1 R2
+set_io --warn-no-port LEFT0 R5
+
+set_io --warn-no-port RED P8
+set_io --warn-no-port GREEN T9
+set_io --warn-no-port BLUE R9
+
+set_io --warn-no-port RGB_RED P8
+set_io --warn-no-port RGB_GREEN T9
+set_io --warn-no-port RGB_BLUE R9
+
+set_io --warn-no-port RGB[2] P8
+set_io --warn-no-port RGB[1] T9
+set_io --warn-no-port RGB[0] R9
+
+# Pins for the serial interface.
+# NeceSSarily using these for ECE 270
+#set_io Rx B10
+#set_io Tx B12
+#set_io DSRn B14
+#set_io RTSn B13
+#set_io DCDn B15
+#set_io CTSn A15
+#set_io DTRn A16
+
+
+# DEBUG LEDS
+# PIO0_45 : C5
+# PIO0_46 : C4
+# PIO0_47 : B3
+# PIO0_51 : C3
+
+set_io --warn-no-port DEBUG_LED_0 C5
+set_io --warn-no-port DEBUGLED0 C5
+set_io --warn-no-port DEBUGLED[0] C5
+
+set_io --warn-no-port DEBUG_LED_1 C4
+set_io --warn-no-port DEBUGLED1 C4
+set_io --warn-no-port DEBUGLED[1] C4
+
+set_io --warn-no-port DEBUG_LED_2 B3
+set_io --warn-no-port DEBUGLED2 B3
+set_io --warn-no-port DEBUGLED[2] B3
+
+set_io --warn-no-port DEBUG_LED_3 C3
+set_io --warn-no-port DEBUGLED3 C3
+set_io --warn-no-port DEBUGLED[3] C3
+
+
+
+# PMOD 6
+# 1 - PIO0_14 - B10
+# 2 - PIO0_15 - B11
+# 3 - PIO0_3 - B14
+# 4 - PIO0_1 - B15
+# 5 - GND
+# 6 - VCC
+# 7 - PIO0_13 - B12
+# 8 - PIO0_9 - B13
+# 9 - PIO0_8 - A15
+# 10 - PIO0_7 - A16
+# 11 - GND
+# 12 - VCC
+
+# PMOD 5
+# 1 - PIO1_20 - K15
+# 2 - PIO1_12 - M16
+# 3 - PIO1_8 - N16
+# 4 - PIO1_4 - P16
+# 5 - GND
+# 6 - VCC
+# 7 - PIO1_16 - L16
+# 8 - PIO1_14 - M15
+# 9 - PIO1_3 - P15
+# 10 - PIO1_1 - R15
+# 11 - GND
+# 12 - VCC
+
+# PMOD 4
+# 1 - PIO2_38 - T13
+# 2 - PIO2_35 - T15
+# 3 - PIO2_43 - R16
+# 4 - PIO2_29 - R10
+# 5 - GND
+# 6 - VCC
+# 7 - GPIO2_36 - T14
+# 8 - GPIO2_41 - T16
+# 9 - GPIO2_37 - M11
+# 10 - GPIO2_45
+# 11 - GND
+# 12 - VCC
+
+# PMOD 3
+# 1 - PIO3_33 - L4
+# 2 - PIO3_35 - K4
+# 3 - PIO3_41 - L7
+# 4 - PIO3_50 - N4
+# 5 - GND
+# 6 - VCC
+# 7 - PIO3_39 - K5
+# 8 - PIO3_45 - L5
+# 9 - PIO3_46 - M4
+# 10 - PIO3_48 - M5
+# 11 - GND
+# 12 - VCC
+
+
+# PMOD 0
+# 1 - PIO1_21 - K16
+# 2 - PIO1_22 - J14
+# 3 - PIO1_42 - F14
+# 4 - PIO0_20 - C9
+# 5 - GND
+# 6 - VCC
+# 7 - PIO1_18 - K14
+# 8 - PIO1_37 - G14
+# 9 - PIO0_18 - A11
+# 10 - PIO0_17 - A10
+# 11 - GND
+# 12 - VCC
+
+
+# PMOD 1
+# 1 - PIO0_27 - B9
+# 2 - PIO0_30 - A7
+# 3 - PIO0_31 - C8
+# 4 - PIO0_34 - C6
+# 5 - GND
+# 6 - VCC
+# 7 - PIO0_23 - A9
+# 8 - PIO0_29 - B8
+# 9 - PIO0_32 - B7
+# 10 - PIO0_36 - A6
+# 11 - GND
+# 12 - VCC
+
+
+# PMOD 2
+# 1 - PIO3_21 - H4
+# 2 - PIO3_26 - H1
+# 3 - PIO3_29 - J2
+# 4 - PIO3_30 - K3
+# 5 - GND
+# 6 - VCC
+# 7 - PIO3_23 - J4
+# 8 - PIO3_28 - J1
+# 9 - PIO3_31 - K1
+# 10 - PIO3_37 - L6
+# 11 - GND
+# 12 - VCC
+
+
+
+
+# Module 1 - PMOD PS2 on PMOD 6 (lower)
+# pin 7 - Data
+# pin 8 - UNUSED
+# pin 9 - Clock
+# pin 10 - UNUSED
+# pin 11 - GND
+# pin 12 - VCC
+
+set_io --warn-no-port PS2_DATA B12
+set_io --warn-no-port PS2DATA B12
+set_io --warn-no-port PS2_CLOCK A15
+set_io --warn-no-port PS2CLOCK A15
+set_io --warn-no-port PS2_CLK A15
+set_io --warn-no-port PS2CLK A15
+
+
+# Module 2 - PMOD I2S2 on PMOD 5
+# pin 1 - I2S2 line out converter master clock
+# pin 2 - I2S2 line out converter word select
+# pin 3 - I2S2 line out converter serial clock
+# pin 4 - I2S2 line out converter serial data
+# pin 5 - GND
+# pin 6 - VCC
+# pin 7 - I2S2 line in converter master clock
+# pin 8 - I2S2 line in converter word select
+# pin 9 - I2S2 line in converter serial clock
+# pin 10 - I2S2 line in converter serial data
+# pin 11 - GND
+# pin 12 - VCC
+
+set_io --warn-no-port I2S2_LO_MCLK K15
+set_io --warn-no-port I2S2LOMCLK K15
+set_io --warn-no-port I2S2_LO_WS M16
+set_io --warn-no-port I2S2LOWS M16
+set_io --warn-no-port I2S2_LO_SCLK N16
+set_io --warn-no-port I2S2LOSCLK N16
+set_io --warn-no-port I2S2_LO_SD P16
+set_io --warn-no-port I2S2LOSD P16
+set_io --warn-no-port I2S2_LI_MCLK L16
+set_io --warn-no-port I2S2LIMCLK L16
+set_io --warn-no-port I2S2_LI_WS M15
+set_io --warn-no-port I2S2LIWS M15
+set_io --warn-no-port I2S2_LI_SCLK P15
+set_io --warn-no-port I2S2LISCLK P15
+set_io --warn-no-port I2S2_LI_SD R15
+set_io --warn-no-port I2S2LISD R15
+
+
+
+
+# Module 3 - PMOD VGA on PMOD 4 and PMOD 3
+# PMOD 4
+# pin 1 - VGA red 0
+# pin 2 - VGA red 1
+# pin 3 - VGA red 2
+# pin 4 - VGA red 3
+# pin 5 - GND
+# pin 6 - VCC
+# pin 7 - VGA blue 0
+# pin 8 - VGA blue 1
+# pin 9 - VGA blue 2
+# pin 10 - VGA blue 3
+# pin 11 - GND
+# pin 12 - VCC
+
+set_io --warn-no-port VGA_RED_0 T13
+set_io --warn-no-port VGARED0 T13
+set_io --warn-no-port VGA_RED[0] T13
+set_io --warn-no-port VGARED[0] T13
+set_io --warn-no-port VGA[0] T13
+set_io --warn-no-port VGA_RGB[0] T13
+
+set_io --warn-no-port VGA_RED_1 T15
+set_io --warn-no-port VGARED1 T15
+set_io --warn-no-port VGA_RED[1] T15
+set_io --warn-no-port VGARED[1] T15
+set_io --warn-no-port VGA[1] T15
+set_io --warn-no-port VGA_RGB[1] T15
+
+set_io --warn-no-port VGA_RED_2 R16
+set_io --warn-no-port VGARED2 R16
+set_io --warn-no-port VGA_RED[2] R16
+set_io --warn-no-port VGARED[2] R16
+set_io --warn-no-port VGA[2] R16
+set_io --warn-no-port VGA_RGB[2] R16
+
+set_io --warn-no-port VGA_RED_3 R10
+set_io --warn-no-port VGARED3 R10
+set_io --warn-no-port VGA_RED[3] R10
+set_io --warn-no-port VGARED[3] R10
+set_io --warn-no-port VGA[3] R10
+set_io --warn-no-port VGA_RGB[3] R10
+
+
+set_io --warn-no-port VGA_BLUE_0 T14
+set_io --warn-no-port VGABLUE0 T14
+set_io --warn-no-port VGA_BLUE[0] T14
+set_io --warn-no-port VGABLUE[0] T14
+set_io --warn-no-port VGA[8] T14
+set_io --warn-no-port VGA_RGB[8] T14
+
+
+set_io --warn-no-port VGA_BLUE_1 T16
+set_io --warn-no-port VGABLUE1 T16
+set_io --warn-no-port VGA_BLUE[1] T16
+set_io --warn-no-port VGABLUE[1] T16
+set_io --warn-no-port VGA[9] T16
+set_io --warn-no-port VGA_RGB[9] T16
+
+set_io --warn-no-port VGA_BLUE_2 M11
+set_io --warn-no-port VGABLUE2 M11
+set_io --warn-no-port VGA_BLUE[2] M11
+set_io --warn-no-port VGABLUE[2] M11
+set_io --warn-no-port VGA[10] M11
+set_io --warn-no-port VGA_RGB[10] M11
+
+set_io --warn-no-port VGA_BLUE_3 P13
+set_io --warn-no-port VGABLUE3 P13
+set_io --warn-no-port VGA_BLUE[3] P13
+set_io --warn-no-port VGABLUE[3] P13
+set_io --warn-no-port VGA[11] P13
+set_io --warn-no-port VGA_RGB[11] P13
+
+
+# PMOD 3
+# pin 1 - VGA green 0
+# pin 2 - VGA green 1
+# pin 3 - VGA green 2
+# pin 4 - VGA green 3
+# pin 5 - GND
+# pin 6 - VCC
+# pin 7 - VGA horizontal sync
+# pin 8 - VGA vertical sync
+# pin 9 - UNUNSED
+# pin 10 - UNUSED
+# pin 11 - GND
+# pin 12 - VCC
+
+set_io --warn-no-port VGA_GREEN_0 L4
+set_io --warn-no-port VGAGREEN0 L4
+set_io --warn-no-port VGA_GREEN[0] L4
+set_io --warn-no-port VGAGREEN[0] L4
+set_io --warn-no-port VGA[4] L4
+set_io --warn-no-port VGA_RGB[4] L4
+
+set_io --warn-no-port VGA_GREEN_1 K4
+set_io --warn-no-port VGAGREEN1 K4
+set_io --warn-no-port VGA_GREEN[1] K4
+set_io --warn-no-port VGAGREEN[1] K4
+set_io --warn-no-port VGA[5] K4
+set_io --warn-no-port VGA_RGB[5] K4
+
+set_io --warn-no-port VGA_GREEN_2 L7
+set_io --warn-no-port VGAGREEN2 L7
+set_io --warn-no-port VGA_GREEN[2] L7
+set_io --warn-no-port VGAGREEN[2] L7
+set_io --warn-no-port VGA[6] L7
+set_io --warn-no-port VGA_RGB[6] L7
+
+set_io --warn-no-port VGA_GREEN_3 N4
+set_io --warn-no-port VGAGREEN3 N4
+set_io --warn-no-port VGA_GREEN[3] N4
+set_io --warn-no-port VGAGREEN[3] N4
+set_io --warn-no-port VGA[7] N4
+set_io --warn-no-port VGA_RGB[7] N4
+
+set_io --warn-no-port VGA_HORIZ_SYNC K5
+set_io --warn-no-port VGAHORIZSYNC K5
+set_io --warn-no-port VGA_HSYNC K5
+set_io --warn-no-port VGAHSYNC K5
+
+set_io --warn-no-port VGA_VERT_SYNC L5
+set_io --warn-no-port VGAVERTSYNC L5
+set_io --warn-no-port VGA_VSYNC L5
+set_io --warn-no-port VGAVSYNC L5
+
+
+# Module 4 - PMOD MicroSD on PMOD 0
+# pin 1 - Chip select / Data3
+# pin 2 - MOSI / Command
+# pin 3 - MISO / Data0
+# pin 4 - SCLK 
+# pin 5 - GND
+# pin 6 - VCC
+# pin 7 - Data1
+# pin 8 - Data2
+# pin 9 - Card detect
+# pin 10 - UNUSED
+# pin 11 - GND
+# pin 12 - VCC
+
+set_io --warn-no-port MICROSD_CHIP_SELECT K16
+set_io --warn-no-port MICROSDCHIPSELECT K16
+set_io --warn-no-port MICROSD_CS K16
+set_io --warn-no-port MICROSDCS K16
+set_io --warn-no-port MICROSD_DATA3 K16
+set_io --warn-no-port MICROSDDATA3 K16
+set_io --warn-no-port MICROSD_DATA[3] K16
+set_io --warn-no-port MICROSDDATA[3] K16
+
+
+set_io --warn-no-port MICROSD_MOSI J14
+set_io --warn-no-port MICROSDMOSI J14
+set_io --warn-no-port MICROSD_COMMAND J14
+set_io --warn-no-port MICROSDCOMMAND J14
+
+set_io --warn-no-port MICROSD_MISO F14
+set_io --warn-no-port MICROSDMISO F14
+set_io --warn-no-port MICROSD_DATA0 F14
+set_io --warn-no-port MICROSDDATA0 F14
+set_io --warn-no-port MICROSD_DATA[0] F14
+set_io --warn-no-port MICROSDDATA[0] F14
+
+set_io --warn-no-port MICROSD_SCLK C9
+set_io --warn-no-port MICROSDSCLK C9
+
+set_io --warn-no-port MICROSD_DATA1 K14
+set_io --warn-no-port MICROSDDATA1 K14
+set_io --warn-no-port MICROSD_DATA[1] K14
+set_io --warn-no-port MICROSDDATA[1] K14
+
+set_io --warn-no-port MICROSD_DATA2 G14
+set_io --warn-no-port MICROSDDATA2 G14
+set_io --warn-no-port MICROSD_DATA[2] G14
+set_io --warn-no-port MICROSDDATA[2] G14
+
+set_io --warn-no-port MICROSD_CARD_DETECT A11
+set_io --warn-no-port MICROSDCARDDETECT A11
+set_io --warn-no-port MICROSD_CD A11
+set_io --warn-no-port MICROSDCD A11
+
+
+
+# Module 5 - PMOD SF3 (serial flash) on PMOD 1
+# pin 1 - Chip select
+# pin 2 - MOSI
+# pin 3 - MISO
+# pin 4 - SCLK
+# pin 5 - GND
+# pin 6 - VCC
+# pin 7 - UNUSED
+# pin 8 - Reset
+# pin 9 - Write protect
+# pin 10 - Hold
+# pin 11 - GND
+# pin 12 - VCC
+
+set_io --warn-no-port SF3_CHIP_SELECT B9
+set_io --warn-no-port SF3CHIPSELECT B9
+set_io --warn-no-port SF3_CS B9
+set_io --warn-no-port SF3CS B9
+
+
+set_io --warn-no-port SF3_MOSI A7
+set_io --warn-no-port SF3MOSI A7
+
+set_io --warn-no-port SF3_MISO C8
+set_io --warn-no-port SF3MISO C8
+
+set_io --warn-no-port SF3_SCLK C6
+set_io --warn-no-port SF3SCLK C6
+
+set_io --warn-no-port SF3_RESET A9
+set_io --warn-no-port SF3RESET A9
+set_io --warn-no-port SF3_RST A9
+set_io --warn-no-port SF3RST A9
+
+set_io --warn-no-port SF3_WRITE_PROTECT B8
+set_io --warn-no-port SF3WRITEPROTECT B8
+set_io --warn-no-port SF3_WP B8
+set_io --warn-no-port SF3WP B8
+
+set_io --warn-no-port SF3_HOLD A6
+set_io --warn-no-port SF3HOLD A6
+
+
+
+# Module 6 - PMOD USBUART on PMOD 2 (lower)
+# pin 7 - UART Active Low Request to Send
+# pin 8 - Receive data from host to pmod (RXD)
+# pin 9 - Transmit data from pmod to host (TXD)
+# pin 10 - UART Active Low Clear to Send
+# pin 11 - GND
+# pin 12 - VCC
+
+set_io --warn-no-port USBUART_RTS J4
+set_io --warn-no-port USBUARTRTS J4
+
+set_io --warn-no-port USBUART_RXD J1
+set_io --warn-no-port USBUARTRXD J1
+
+set_io --warn-no-port USBUART_TXD K1
+set_io --warn-no-port USBUARTTXD K1
+
+set_io --warn-no-port USBUART_CTS L6
+set_io --warn-no-port USBUARTCTS L6
+
+
+
+
+
+
+
+
+
+
