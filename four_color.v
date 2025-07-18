@@ -9,6 +9,9 @@ module four_color #(
 );
 
 always @(*) begin
+    red = 0;
+    green = 0;
+    blue = 0;
     if(horizontal_num < 10'd160) begin // First Block
         red = 4'hF;
         green = 4'h0;

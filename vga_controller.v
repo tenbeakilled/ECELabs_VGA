@@ -31,6 +31,12 @@ reg [9:0] pixel_y;
 reg [9:0] next_pixel_x;
 reg [9:0] next_pixel_y;
 
+initial begin
+    pixel_x = 0;
+    pixel_y = 0;
+    vsync = 0;
+    hsync = 0;
+end
 // assign horizontal_num = pixel_x;
 assign horizontal_num = (pixel_x < HVID && pixel_y < VVID) ? pixel_x : 10'd0;
 
