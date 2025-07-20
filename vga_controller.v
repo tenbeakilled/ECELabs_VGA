@@ -11,6 +11,7 @@ module vga_controller #(
     input clk_25,
     output reg hsync,
     output reg vsync,
+    output reg video_on,
     output wire [9:0] horizontal_num
 );
 
@@ -25,6 +26,7 @@ localparam VSYNC_END = VSYNC_BEGIN+VS;
 
 reg next_hsync;
 reg next_vsync;
+reg next_video_on;
 
 reg [9:0] pixel_x;
 reg [9:0] pixel_y;
@@ -36,6 +38,7 @@ initial begin
     pixel_y = 0;
     vsync = 0;
     hsync = 0;
+    video_on = 0;
 end
 // assign horizontal_num = pixel_x;
 assign horizontal_num = (pixel_x < HVID && pixel_y < VVID) ? pixel_x : 10'd0;
@@ -45,6 +48,7 @@ always @(posedge clk_25) begin
     pixel_y <= next_pixel_y;
     vsync <= next_vsync;
     hsync <= next_hsync;
+    video_on <= next_video_on;
 end
 
 always @(*) begin
@@ -55,6 +59,7 @@ always @(*) begin
     if (!next_pixel_x) next_pixel_y = (pixel_y >= VC_MAX-1) ? 0 : pixel_y + 1;
     else next_pixel_y = pixel_y;
 
+    next_video_on = (next_pixel_x < HVID && next_pixel_y < VVID) ? 1 : 0;
     next_hsync = (next_pixel_x >= HSYNC_BEGIN && next_pixel_x < HSYNC_END) ? 1 : 0;
     next_vsync = (next_pixel_y >= VSYNC_BEGIN && next_pixel_y < VSYNC_END) ? 1 : 0;
 end

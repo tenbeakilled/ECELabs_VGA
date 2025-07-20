@@ -36,16 +36,19 @@ module top (
 
     // VGA Controller
     wire [9:0] horizontal_num;
+    wire video_on;
     vga_controller VGA_CNT (
         .clk_25(clk_25),
         .hsync(VGA_HSYNC),
         .vsync(VGA_VSYNC),
-        .horizontal_num(horizontal_num)
+        .horizontal_num(horizontal_num),
+        .video_on(video_on)
     );
 
     // Print on Monitor
     four_color MONITOR (
         .clk_25(clk_25),
+        .video_on(video_on),
         .horizontal_num(horizontal_num),
         .red({VGARED3, VGARED2, VGARED1, VGARED0}),
         .green({VGAGREEN3, VGAGREEN2, VGAGREEN1, VGAGREEN0}),
